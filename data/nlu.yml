@@ -1,0 +1,87 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - dont know
+    - don't know
+    - it did not help
+    - it didn't work
+    - it did not work
+    - Not working.
+
+- intent: wifi_problem
+  examples: |
+    - wifi not working
+    - wifi not connected.
+    - my wifi in not connected.
+    - wifi
+    - wifi is working slow.
+
+- intent: windows
+  examples: |
+    - windows 11
+    - windows 8
+    - windows 10
+    - windows XP
+    - windows
+
+- intent: mac
+  examples: |
+    - mac
+    - macOS
+    - apple
+    - macbook
+    - macintosh
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

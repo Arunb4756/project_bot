@@ -1,0 +1,139 @@
+version: "3.0"
+
+stories:
+
+- story: wifi problem 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wifi_problem
+  - action: utter_type_of_wifi_problem
+  - intent: deny
+  - action: utter_type_of_wifi_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_range_question
+  - intent: deny
+  - action: utter_wifi_range_ans
+  - action: utter_did_that_help 
+  - intent: deny
+  - action: utter_wifi_antenna_question
+  - intent: affirm
+  - action: utter_wifi_antenna_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_device_type_question
+  - intent: windows
+  - action: utter_device_type_windows
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_final_ans
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_wifi_has_error
+  - action: utter_contact
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: wifi problem 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wifi_problem
+  - action: utter_type_of_wifi_problem
+  - intent: deny
+  - action: utter_type_of_wifi_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_range_question
+  - intent: deny
+  - action: utter_wifi_range_ans
+  - action: utter_did_that_help 
+  - intent: deny
+  - action: utter_wifi_antenna_question
+  - intent: affirm
+  - action: utter_wifi_antenna_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_device_type_question
+  - intent: mac
+  - action: utter_device_type_macos
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_final_ans
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_wifi_has_error
+  - action: utter_contact
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: wifi problem 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wifi_problem
+  - action: utter_type_of_wifi_problem
+  - intent: deny
+  - action: utter_type_of_wifi_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_range_question
+  - intent: deny
+  - action: utter_wifi_range_ans
+  - action: utter_did_that_help 
+  - intent: deny
+  - action: utter_wifi_antenna_question
+  - intent: affirm
+  - action: utter_wifi_antenna_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_device_type_question
+  - intent: windows
+  - action: utter_device_type_windows
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_final_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_internet_down
+  - action: utter_contact
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: wifi problem 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wifi_problem
+  - action: utter_type_of_wifi_problem
+  - intent: deny
+  - action: utter_type_of_wifi_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_range_question
+  - intent: deny
+  - action: utter_wifi_range_ans
+  - action: utter_did_that_help 
+  - intent: deny
+  - action: utter_wifi_antenna_question
+  - intent: affirm
+  - action: utter_wifi_antenna_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_device_type_question
+  - intent: mac
+  - action: utter_device_type_macos
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_final_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_internet_down
+  - action: utter_contact
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye

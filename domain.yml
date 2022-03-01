@@ -1,0 +1,82 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - wifi_problem
+  - bot_challenge
+  - windows
+  - mac
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you today?"
+  - text: "Greeting! How can I assist you?"
+  - text: "Hi! I’d be happy to answer any questions."
+  - text: "Hi, are you just looking or do you need some assistance?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Did it resolve your problem?"
+  - text: "Hope the issue has been resolved."
+
+  utter_goodbye:
+  - text: "Bye. Have a great time ahead."
+  - text: "Goodbye. Hope your issue has been resolved."
+
+  utter_type_of_wifi_problem:
+  - text: "Is your Wifi connected?"
+  - text: "Is the name of wifi showing in the list?"
+  utter_type_of_wifi_ans:
+  - text: "Try turning off the wifi on your device and enable the wifi again."
+
+  utter_wifi_range_question:
+  - text: "Are you within the range of wifi connectivity? The range of wifi ranges from 5 to 10 feets." 
+  utter_wifi_range_ans:
+  - text: "Please connect your device within the range of Wifi connectivity. Get within 5 to 10 feet range of wifi router."
+
+  utter_wifi_antenna_question:
+  - text: "Does your wifi router has external antennas?"
+  utter_wifi_antenna_ans:
+  - text: "Try adjusting the antennas by alternating them 
+          between fully vertical and fully horizontal positions."
+
+  utter_device_type_question:
+  - text: "What is your device type: Windows or MacOS?"
+  utter_device_type_windows:
+  - text: "Search for “wifi troubleshooting” and open the result,
+           which should be Identify and Repair Network Issues. That will go through a 
+           series of diagnostics that may restore connectivity."
+  utter_device_type_macos:
+  - text: "You can run Wireless Diagnostics. Hold the Options key and click the AirPort (Wi-Fi) 
+          icon on the menu bar. Find Open Wireless Diagnostics, and then follow the on-screen instructions."
+
+  utter_wifi_final_ans:
+  - text: "Plug your device into the router directly using ethernet cable and see if it connect that way"
+
+  utter_wifi_has_error:
+  - text: "There is problem in the wifi.
+           Try resetting the wifi router by clicking and holding the reset button with a paper clip for 30 seconds. See if it works."
+
+  utter_internet_down:
+  - text: "Internet may be down altogether. Please wait for internet to be restored by the team."    
+  - text: "The internet service may have been disrupted. Wait for internet to be restored."     
+
+  utter_more_help:
+  - text: "Can I help you with anything else?"
+  - text: "Do you need more help?"
+  - text: "Is there anything else I can help you with?"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_contact:
+  - text: "If the problem persists, contact the company's ITSM team on abc@mail.com."
+  - text: "Contact helpdesk@itsm.com"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
