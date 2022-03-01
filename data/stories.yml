@@ -137,3 +137,60 @@ stories:
   - action: utter_more_help
   - intent: deny
   - action: utter_goodbye
+
+- story: wifi problem 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wifi_problem
+  - action: utter_type_of_wifi_problem
+  - intent: deny
+  - action: utter_type_of_wifi_ans
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: wifi problem 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wifi_problem
+  - action: utter_type_of_wifi_problem
+  - intent: deny
+  - action: utter_type_of_wifi_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_range_question
+  - intent: deny
+  - action: utter_wifi_range_ans
+  - action: utter_did_that_help 
+  - intent: affirm
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: wifi problem 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wifi_problem
+  - action: utter_type_of_wifi_problem
+  - intent: deny
+  - action: utter_type_of_wifi_ans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wifi_range_question
+  - intent: deny
+  - action: utter_wifi_range_ans
+  - action: utter_did_that_help 
+  - intent: deny
+  - action: utter_wifi_antenna_question
+  - intent: affirm
+  - action: utter_wifi_antenna_ans
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_more_help
+  - intent: deny
+  - action: utter_goodbye
